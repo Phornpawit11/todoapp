@@ -23,6 +23,7 @@ export default function HomeScreen() {
   const handleAddTodo = () => {
     if (todoText.trim() === "") {
       alert("Todo text cannot be empty");
+      return;
     }
 
     const newTodo: TodoListModel = {
